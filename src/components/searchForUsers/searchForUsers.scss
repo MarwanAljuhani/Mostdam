@@ -1,0 +1,65 @@
+.searchContainer {
+    position: relative; /* Add this to make it a positioning context */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+
+  
+    .searchIcon {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .inputContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      input {
+        border: none;
+        border-bottom: 1px solid gray;
+        background-color: transparent;
+        color: white;
+        margin-left: 10px;
+  
+        &:focus {
+          outline: none; 
+        }
+      }
+    }
+  
+    .foundedUsers {
+      position: absolute;
+      top: 510px; 
+      left: 0;
+      width: 100%;
+      height: 200px;
+      overflow-y: scroll;
+      background-color: rgb(6, 5, 5); 
+      border: 1px solid gray;
+      border-top: none; 
+      display: flex;
+      flex-direction: column;
+     
+  
+      p {
+        display: flex;
+        align-items: center;
+        margin: 0 0 10px 0;
+        padding: 10px;
+        &:hover{
+          background-color: rgb(53, 53, 54);
+          cursor: pointer;
+        }
+  
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  

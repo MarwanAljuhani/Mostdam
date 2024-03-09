@@ -1,0 +1,23 @@
+
+.appContainer{
+  display: grid;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #121228;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .appContainer{
+    display: grid;
+    height: 100vh;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,46 @@
+.user-profile-page {
+  background-color: #0d0d1a;
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  height: 500px;
+  border-radius: 10px;
+}
+.user-profile-page h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.user-profile-page img {
+  max-width: 150px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+.user-profile-page p {
+  font-size: 16px;
+}
+.user-profile-page .followingInfo {
+  display: flex;
+  justify-content: center;
+}
+.user-profile-page .followingInfo p {
+  margin-right: 15px;
+}
+.user-profile-page button {
+  background-color: #16193a;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.user-profile-page button:hover {
+  background-color: #16193a;
+}
+
+@media only screen and (max-width: 768px) {
+  .user-profile-page {
+    width: 92vw;
+  }
+}/*# sourceMappingURL=userProfilePage.css.map */

@@ -1,0 +1,150 @@
+@import "../../style/variables.scss";
+
+.signup-container {
+  background-color: $backgroundColor;
+  color: $fontColor;
+  max-width: 52.1875rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  max-height: 38rem;
+
+  .signupLeftSection {
+    padding: 2.5rem;
+    min-width: 35%;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.25rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        margin-bottom: 1.25rem;
+
+        label {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 0.3125rem;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="file"] {
+          width: 100%;
+          padding: 0.625rem;
+          border: 1px solid $mainColor;
+          border-radius: 0.25rem;
+          background-color: $backgroundColorLighter;
+          color: $fontColor;
+          transition: border-color 0.2s;
+
+          &:focus {
+            outline: none;
+            border-color: $mainColor;
+          }
+        }
+
+        button[type="submit"] {
+          background-color: $mainColor;
+          color: $fontColor;
+          border: none;
+          padding: 0.625rem;
+          border-radius: 0.25rem;
+          cursor: pointer;
+          font-weight: bold;
+          transition: background-color 0.2s;
+
+          &:hover {
+            background-color: darken($mainColor, 10%);
+          }
+        }
+      }
+      .error-message {
+        font-size: 14px;
+      }
+      .signupBtn {
+        display: grid;
+        justify-content: center;
+      }
+    }
+  }
+
+  .signupRightSection {
+    img {
+      background-position: center;
+      background-size: contain;
+      width: 100%;
+      height: 100%;
+      border-radius: 0 10px 10px 0;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .signup-container {
+    .signupRightSection {
+      display: none;
+    }
+    .signupLeftSection {
+      padding: 2.5rem;
+      min-width: 35%;
+
+      h2 {
+        text-align: center;
+        margin-bottom: 1.25rem;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        div {
+          margin-bottom: 1.25rem;
+
+          label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.3125rem;
+          }
+
+          input[type="text"],
+          input[type="email"],
+          input[type="password"],
+          input[type="file"] {
+            width: 290px;
+            padding: 0.625rem;
+            border: 1px solid $mainColor;
+            border-radius: 0.25rem;
+            background-color: $backgroundColorLighter;
+            color: $fontColor;
+            transition: border-color 0.2s;
+
+            &:focus {
+              outline: none;
+              border-color: $mainColor;
+            }
+          }
+
+          button[type="submit"] {
+            background-color: $mainColor;
+            color: $fontColor;
+            border: none;
+            padding: 0.625rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.2s;
+
+            &:hover {
+              background-color: darken($mainColor, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,185 @@
+.loadingIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+.loadingIcon svg {
+  width: 70px;
+  height: 70px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.postContainer {
+  overflow-y: scroll;
+  height: 90vh;
+}
+.postContainer .post {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #0d0d1a;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 790px;
+}
+.postContainer .post .infoSection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.postContainer .post .infoSection img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.postContainer .post .infoSection .info {
+  display: flex;
+  flex-direction: column;
+}
+.postContainer .post .infoSection .info p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+.postContainer .post .text {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  flex-wrap: wrap;
+}
+.postContainer .post .imgSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.postContainer .post .imgSection img {
+  border-radius: 10px;
+  max-width: 800px;
+  max-height: 700px;
+}
+.postContainer .post .deletePostBtn {
+  color: white;
+  background-color: rgb(40, 2, 131);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-left: 0.7em;
+}
+.postContainer .post .deletePostBtn:hover {
+  background-color: rgb(184, 1, 1);
+  cursor: pointer;
+}
+.postContainer .post .bottomSection {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+.postContainer .post .bottomSection svg {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.postContainer .post .bottomSection svg:hover {
+  color: #16193a;
+}
+.postContainer .post .bottomSection .commentIcon {
+  display: flex;
+  align-items: center;
+}
+.postContainer .post .bottomSection span {
+  margin-right: 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+.postContainer .commentContainer {
+  margin-top: 10px;
+}
+.postContainer .commentContainer .comment {
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: #0d0d1a;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  line-height: 1.4;
+  color: #FFFFFF;
+}
+.postContainer .commentContainer .comment .commentUserInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.postContainer .commentContainer .comment .commentUserInfo .commentUserPhoto {
+  width: 40px;
+  height: 40px;
+  color: black;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.postContainer .commentContainer .comment .commentText {
+  margin-left: 50px;
+  font-size: 17px;
+  max-width: 700px;
+}
+.postContainer .addComment {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.postContainer .addComment input {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  background-color: black;
+  color: white;
+}
+.postContainer .addComment input:focus {
+  outline: none;
+}
+.postContainer .addComment button {
+  padding: 10px 20px;
+  background-color: #16193a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 150px;
+}
+.postContainer .addComment button:hover {
+  background-color: #4049a9;
+}
+
+@media only screen and (max-width: 768px) {
+  .postContainer {
+    width: 100vw;
+    height: 50em;
+  }
+  .postContainer .imgSection {
+    overflow: hidden;
+    height: 15em;
+  }
+  .postContainer .imgSection img {
+    border-radius: 10px;
+    width: 22em;
+    max-height: 30em;
+  }
+}/*# sourceMappingURL=viewSinglePost.css.map */

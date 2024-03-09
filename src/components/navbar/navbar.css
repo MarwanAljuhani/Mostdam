@@ -1,0 +1,123 @@
+.navbarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9375rem;
+  background-color: #0d0d1a;
+  width: 50rem;
+  height: 1.875rem;
+  border-bottom: 1px rgba(255, 255, 255, 0.564) solid;
+  border-radius: 0 0 5px 5px;
+  color: #FFFFFF;
+}
+.navbarContainer .homeIcon {
+  transform: scale(1.3);
+  margin-right: 0.625rem;
+  color: rgb(255, 255, 255);
+}
+.navbarContainer .homeIcon:hover {
+  transform: scale(1.4);
+}
+.navbarContainer .navbarBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(84, 84, 84);
+  border-radius: 0.3125rem;
+  padding: 0.1875rem;
+  text-decoration: none;
+}
+.navbarContainer .navbarBtn .navLink {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+.navbarContainer .navbarBtn .active button {
+  background-color: #ffffff;
+  color: rgb(72, 6, 6);
+  border-radius: 0.3125rem;
+}
+.navbarContainer .navbarBtn .active .navLink {
+  color: rgb(72, 6, 6);
+}
+.navbarContainer .navbarBtn button {
+  margin-right: 0.625rem;
+  border: none;
+  background-color: transparent;
+  color: #FFFFFF;
+  padding: 0.3125rem 0.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+.navbarContainer .profile {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+.navbarContainer .profile img {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  margin-left: 0.625rem;
+}
+.navbarContainer .profile button {
+  background-color: rgba(255, 0, 0, 0.309);
+  border: none;
+  margin: 1.875rem;
+  color: white;
+}
+.navbarContainer .profilePopup {
+  position: relative;
+  top: 5rem;
+  right: 6.25rem;
+  background-color: #0d0d1a;
+  border: 1px solid #16193a;
+  border-radius: 0.3125rem;
+  padding: 0.625rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.navbarContainer .profilePopup p {
+  margin: 0;
+  color: #FFFFFF;
+}
+.navbarContainer .profilePopup button {
+  background-color: #16193a;
+  border: none;
+  color: #FFFFFF;
+  padding: 0.3125rem 0.625rem;
+  margin-top: 0.625rem;
+  cursor: pointer;
+}
+.navbarContainer .profilePopup button:hover {
+  background-color: #080915;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbarContainer {
+    overflow: hidden;
+    width: 94vw;
+    max-height: 50px;
+  }
+  .navbarContainer .homeIcon {
+    transform: scale(1.2);
+    margin-right: 0.3125rem;
+  }
+  .navbarContainer .navbarBtn button {
+    margin-right: 0.3125rem;
+  }
+  .navbarContainer .profile img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 0.3125rem;
+  }
+  .navbarContainer .profile button {
+    margin: 0.9375rem;
+  }
+  .navbarContainer .profilePopup {
+    top: 3.125rem;
+    right: 0.625rem;
+  }
+}/*# sourceMappingURL=navbar.css.map */

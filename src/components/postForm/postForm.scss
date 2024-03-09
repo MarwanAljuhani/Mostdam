@@ -1,0 +1,83 @@
+@import "../../style/variables.scss";
+
+.postFormContainer {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: $backgroundColor;
+
+  padding:  0.5em 0.9375rem;
+
+  .previewSection {
+    margin: 1rem 0;
+    max-width: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .previewImage {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+  }
+  .upperSection {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+      background-position: center;
+      background-size: auto;
+    }
+
+    input {
+      width: 100%;
+      height: 20px;
+      background-color: $backgroundColorLighter;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 10px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .bottomSection {
+    margin-top: 30px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    svg {
+      height: 30px;
+      width: 35px;
+      margin-right: 10px;
+      background-color: transparent;
+      color: white;
+
+      &:hover {
+        color: rgb(0, 170, 255);
+        cursor: pointer;
+      }
+    }
+
+    button {
+      padding: 5px 30px;
+      font-size: 15px;
+      background-color: $backgroundColor;
+      color: white;
+      border: 1px solid gray;
+
+      &:hover {
+        background-color: gray;
+        cursor: pointer;
+      }
+    }
+  }
+}

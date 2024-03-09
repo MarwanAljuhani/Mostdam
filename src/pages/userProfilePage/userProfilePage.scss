@@ -1,0 +1,55 @@
+@import "../../style/variables.scss";
+
+.user-profile-page {
+  background-color: $backgroundColor;
+  color: $fontColor;
+  padding: 20px;
+  text-align: center;
+  height: 500px;
+  border-radius: 10px;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  img {
+    max-width: 150px;
+    border-radius: 20px;
+    margin: 20px 0;
+  }
+
+  p {
+    font-size: 16px;
+  }
+  .followingInfo {
+    display: flex;
+    justify-content: center;
+    p {
+      margin-right: 15px;
+    }
+  }
+
+  button {
+    background-color: $mainColor;
+    color: $fontColor;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $backgroundColorLighter;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .user-profile-page {
+    width:  92vw;
+    
+    
+  }
+}
